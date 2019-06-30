@@ -9,11 +9,14 @@ public class Actor {
     private int x;
     private int y;
     private Texture texture;
+    private TileMap tileMap;
 
-    public Actor(int x, int y, Texture texture) {
+    public Actor(int x, int y, Texture texture, TileMap tileMap) {
         this.x = x;
         this.y = y;
         this.texture = texture;
+        this.tileMap = tileMap;
+        tileMap.getTile(x, y).setActor(this);
     }
 
     public void draw(SpriteBatch spriteBatch) {
@@ -24,9 +27,20 @@ public class Actor {
                 Settings.SCALED_ACTOR_HEIGHT);
     }
 
-    public void move(int dx, int dy) {
-        this.x += dx;
-        this.y += dy;
-    }
+    public boolean move(int dx, int dy) {
+        int newX = x + dx;
+        int newY = y + dy;
+        if (newX >= tileMap.getWidth() || newX < 0 || newY >= tileMap.getHeight() || newY < 0) {
+            return false;
+        }
+        if (tileMap.getTile(newX, newY).getActor() != null) {
+            return false;
+        }
+        tileMap.getTile(x, y).setActor(null);
+        this.x = newX;
+        this.y = newY;
+        tileMap.getTile(x, y).setActor(this);
 
+        return true;
+    }
 }

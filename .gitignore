@@ -2,4 +2,4 @@
 out/
 
 # Ignore file named 'workspace.xml'
-.idea/workspace.xml
+workspace.xml
