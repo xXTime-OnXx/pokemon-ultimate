@@ -4,8 +4,10 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import net.tf.pokemon.PokemonGame;
+import net.tf.pokemon.Settings;
 import net.tf.pokemon.controller.ActorController;
 import net.tf.pokemon.model.Actor;
+import net.tf.pokemon.model.Camera;
 import net.tf.pokemon.model.TileMap;
 
 public class GameScreen extends AbstractScreen {
@@ -14,6 +16,7 @@ public class GameScreen extends AbstractScreen {
     private TileMap tileMap;
     private Actor actor;
     private ActorController actorController;
+    private Camera camera;
 
     public GameScreen(PokemonGame pokemonGame) {
         super(pokemonGame);
@@ -21,6 +24,7 @@ public class GameScreen extends AbstractScreen {
         this.tileMap = new TileMap(10, 10);
         this.actor = new Actor(0, 0, new Texture("res/graphics_unpacked/tiles/brendan_stand_south.png"), tileMap);
         this.actorController = new ActorController(actor);
+        this.camera = new Camera();
     }
 
     @Override
@@ -30,6 +34,11 @@ public class GameScreen extends AbstractScreen {
 
     @Override
     public void render(float delta) {
+        camera.update(actor.getX() + 0.5f, actor.getY() + 0.5f);
+
+        Settings.WORLD_START_X = Gdx.graphics.getWidth() / 2f - camera.getCameraX() * Settings.SCALED_TILE_SIZE;
+        Settings.WORLD_START_Y = Gdx.graphics.getHeight() / 2f - camera.getCameraY() * Settings.SCALED_TILE_SIZE;
+
         spriteBatch.begin();
 
         tileMap.draw(spriteBatch);

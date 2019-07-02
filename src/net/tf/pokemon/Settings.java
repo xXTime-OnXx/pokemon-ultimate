@@ -8,4 +8,7 @@ public class Settings {
     public static final float SCALED_ACTOR_WIDTH = SCALED_TILE_SIZE;
     public static final float SCALED_ACTOR_HEIGHT = SCALED_TILE_SIZE * 1.5f;
 
+    public static float WORLD_START_X = 0;
+    public static float WORLD_START_Y = 0;
+
 }

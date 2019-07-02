@@ -21,8 +21,8 @@ public class Actor {
 
     public void draw(SpriteBatch spriteBatch) {
         spriteBatch.draw(texture,
-                x * Settings.SCALED_TILE_SIZE,
-                y * Settings.SCALED_TILE_SIZE,
+                Settings.WORLD_START_X + x * Settings.SCALED_TILE_SIZE,
+                Settings.WORLD_START_Y + y * Settings.SCALED_TILE_SIZE,
                 Settings.SCALED_ACTOR_WIDTH,
                 Settings.SCALED_ACTOR_HEIGHT);
     }
@@ -42,5 +42,13 @@ public class Actor {
         tileMap.getTile(x, y).setActor(this);
 
         return true;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
     }
 }

@@ -34,8 +34,8 @@ public class TileMap {
             for (int y = 0; y < height; y++) {
                 Tile tile = tiles[x][y];
                 spriteBatch.draw(tile.getTerrain().texture,
-                        x * Settings.SCALED_TILE_SIZE,
-                        y * Settings.SCALED_TILE_SIZE,
+                        Settings.WORLD_START_X + x * Settings.SCALED_TILE_SIZE,
+                        Settings.WORLD_START_Y + y * Settings.SCALED_TILE_SIZE,
                         Settings.SCALED_TILE_SIZE,
                         Settings.SCALED_TILE_SIZE);
             }
