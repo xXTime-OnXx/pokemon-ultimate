@@ -34,7 +34,8 @@ public class GameScreen extends AbstractScreen {
 
     @Override
     public void render(float delta) {
-        camera.update(actor.getX() + 0.5f, actor.getY() + 0.5f);
+        actor.update(delta);
+        camera.update(actor.getWorldX() + 0.5f, actor.getWorldY() + 0.5f);
 
         Settings.WORLD_START_X = Gdx.graphics.getWidth() / 2f - camera.getCameraX() * Settings.SCALED_TILE_SIZE;
         Settings.WORLD_START_Y = Gdx.graphics.getHeight() / 2f - camera.getCameraY() * Settings.SCALED_TILE_SIZE;

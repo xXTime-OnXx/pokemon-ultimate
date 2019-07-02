@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1cdb815e-d76d-4a73-b694-be87c22da97a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/net/tf/pokemon/model/Camera.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/tf/pokemon/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/tf/pokemon/Settings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/tf/pokemon/model/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/tf/pokemon/model/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,14 +33,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/Actor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="44">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1953#1954#0" expanded="true" />
+                <element signature="e#1991#1992#0" expanded="true" />
+                <element signature="e#2670#2671#0" expanded="true" />
+                <element signature="e#2699#2700#0" expanded="true" />
+                <element signature="e#2731#2732#0" expanded="true" />
+                <element signature="e#2760#2761#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,18 +74,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/Camera.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -104,12 +91,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="216">
+              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#883#884#0" expanded="true" />
-                <element signature="e#943#944#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/net/tf/pokemon/model/Terrain.java" />
         <option value="$PROJECT_DIR$/src/net/tf/pokemon/model/Camera.java" />
         <option value="$PROJECT_DIR$/src/net/tf/pokemon/Settings.java" />
-        <option value="$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java" />
+        <option value="$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java" />
         <option value="$PROJECT_DIR$/src/net/tf/pokemon/model/Actor.java" />
       </list>
     </option>
@@ -160,6 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -190,7 +176,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,7 +242,8 @@
       <workItem from="1561653462863" duration="4161000" />
       <workItem from="1561732393874" duration="2830000" />
       <workItem from="1561887562984" duration="716000" />
-      <workItem from="1562078070485" duration="650000" />
+      <workItem from="1562078070485" duration="682000" />
+      <workItem from="1562098181835" duration="1361000" />
     </task>
     <task id="LOCAL-00001" summary="Setup">
       <created>1561672275050</created>
@@ -287,17 +273,24 @@
       <option name="project" value="LOCAL" />
       <updated>1561888530524</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Camera">
+      <created>1562078745502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562078745502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8357000" />
+    <option name="totallyTimeSpent" value="9750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2639485" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,7 +298,7 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,7 +326,8 @@
     <MESSAGE value="Setup" />
     <MESSAGE value=".ignore update" />
     <MESSAGE value="TileMap" />
-    <option name="LAST_COMMIT_MESSAGE" value="TileMap" />
+    <MESSAGE value="Camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="Camera" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
@@ -403,15 +397,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/Camera.java">
+    <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="210">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
           <folding>
-            <element signature="e#265#266#0" expanded="true" />
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -439,36 +430,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/screen/GameScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="216">
+          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#883#884#0" expanded="true" />
-            <element signature="e#943#944#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/TileMap.java">
+    <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/Camera.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        <state relative-caret-position="75">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/net/tf/pokemon/model/Actor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="44">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+            <element signature="e#2670#2671#0" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2760#2761#0" expanded="true" />
           </folding>
         </state>
       </provider>
